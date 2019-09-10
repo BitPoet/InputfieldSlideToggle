@@ -3,11 +3,11 @@ Sliding Toggle for the ProcessWire CMS
 
 ## Description
 
-Fieldtype and Inputfield that implements Smartphone-Style toggles as replacement for Checkboxes.
+Fieldtype and Inputfield that implements smartphone-style toggles as replacement for checkbox inputs. The visualization is CSS-only, no additional JS necessary.
 
 ## Status
 
-Alpha, test carefully
+Alpha, use with caution
 
 ## Features / Field Settings
 
