@@ -1,0 +1,24 @@
+<?php namespace ProcessWire;
+
+class FieldtypeSlideToggle extends FieldtypeCheckbox {
+
+	public static function getModuleInfo() {
+		return [
+			"title"		=>	"Sliding Toggle Fieldtype",
+			"summary"	=>	"Smartphone style sliding toggle as replacement for plain checkboxes",
+			"version"	=>	"0.0.2",
+		];
+	}
+
+	public function getInputfield(Page $page, Field $field) {
+		/** @var InputfieldCheckbox $inputfield */
+		$inputfield = $this->modules->get('InputfieldSlideToggle'); 
+		$inputfield->set('checkedValue', 1); 
+		$inputfield->set('uncheckedValue', 0); 
+		$value = $page->get($field->name); 
+		if($value) $inputfield->attr('checked', 'checked'); 
+		$inputfield->class = $this->className();
+		return $inputfield; 
+	}
+
+}
