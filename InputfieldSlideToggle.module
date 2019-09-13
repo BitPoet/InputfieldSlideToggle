@@ -6,7 +6,7 @@ class InputfieldSlideToggle extends InputfieldCheckbox {
 		return [
 			"title"		=>	"Sliding Toggle",
 			"summary"	=>	"Smartphone style sliding toggle as replacement for plain checkboxes",
-			"version"	=>	"0.0.3",
+			"version"	=>	"0.0.4",
 			"requires"	=>	"InputfieldCheckbox",
 			"installs"	=>	"FieldtypeSlideToggle"
 		];
@@ -105,7 +105,7 @@ class InputfieldSlideToggle extends InputfieldCheckbox {
 			"<label for='{$this->id}'>" .
 				"<input type='checkbox' " . $this->getAttributesString($attrs) . " />" . 
 				"<div><div></div></div>" .
-				"<span class='pw-no-select'>$label</span> " .
+				(($this->getSetting('checkboxLabel') || $this->skipLabel == Inputfield::skipLabelHeader) ? "<span class='pw-no-select'>$label</span> " : "" ) .
 			"</label>" .
 		"";
 		

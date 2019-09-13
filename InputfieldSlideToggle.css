@@ -14,11 +14,14 @@ input[type="checkbox"].slidetoggle + div {
 	height: 1.33em;
 	border: 1px solid rgba(0,0,0,.4);
 	border-radius: 999px;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.4);
 	-webkit-transition-duration: .4s;
 	-webkit-transition-property: background-color, box-shadow;
-	background-color: rgba(255, 0, 0, 0.4);
 	margin: 1em 1.2em 1em 2.5em;
+}
+
+input[type="checkbox"].slidetoggle.st-off-red + div {
+	background-color: rgba(255, 0, 0, 0.4);
 }
 
 /* Red Off Track */
@@ -145,7 +148,7 @@ input[type="checkbox"].st-on-red.slidetoggle:checked + div > div {
 input[type="checkbox"].st-on-black.slidetoggle:checked + div {
 	background-color: #b0b0b0;
 	border: 1px solid rgba(0, 0, 0, 0);
-	box-shadow: inset 0 0 0 1em rgba(0,0,0,1);
+	box-shadow: inset 0 0 0 1.25em rgba(0,0,0,1);
 }
 
 input[type="checkbox"].st-on-black.slidetoggle:checked + div > div {
@@ -156,7 +159,7 @@ input[type="checkbox"].st-on-black.slidetoggle:checked + div > div {
 input[type="checkbox"].st-on-grey.slidetoggle:checked + div {
 	background-color: #b0b0b0;
 	border: 1px solid rgba(176, 176, 176, 0);
-	box-shadow: inset 0 0 0 10px rgba(176, 176, 176, 1);
+	box-shadow: inset 0 0 0 1.25em rgba(176, 176, 176, 1);
 }
 
 input[type="checkbox"].st-on-grey.slidetoggle:checked + div > div {
@@ -167,7 +170,7 @@ input[type="checkbox"].st-on-grey.slidetoggle:checked + div > div {
 input[type="checkbox"].st-on-orange.slidetoggle:checked + div {
 	background-color: #b0b0b0;
 	border: 1px solid rgba(255, 129, 18, 0);
-	box-shadow: inset 0 0 0 10px rgba(255, 129, 18, 1);
+	box-shadow: inset 0 0 0 1.25em rgba(255, 129, 18, 1);
 }
 
 input[type="checkbox"].st-on-orange.slidetoggle:checked + div > div {
