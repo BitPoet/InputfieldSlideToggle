@@ -23,6 +23,21 @@ Currently, "unchecked" toggles can be displayed either in grey (default) or red.
 
 "Checked" toggles can be rendered in one of these colors: blue (default), black, green, grey, orange or red.
 
+### Checkbox Label
+
+The optional text in the "Checkbox Label" inherited from InputfieldCheckbox, if set, will be shown
+to the right of the toggle.
+
+### Available Toggles
+
+![Small Toggles](https://bitpoet.github.io/img/toggles_small.png "Small Toggles")
+
+![Medium Toggles](https://bitpoet.github.io/img/toggles_medium.png "Medium Toggles")
+
+![Big Toggles](https://bitpoet.github.io/img/toggles_big.png "Big Toggles")
+
+![Extra Big Toggles](https://bitpoet.github.io/img/toggles_extra_big.png "Extra Big Toggles")
+
 ## License
 
 Released under Mozilla Public License. See LICENSE file for details.
