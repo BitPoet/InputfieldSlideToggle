@@ -1,12 +1,24 @@
 <?php namespace ProcessWire;
 
+/**
+ * Sliding Toggle Inputfield
+ *
+ * Fieldtype and Inputfield that implements smartphone-style toggles as replacement
+ * for checkbox inputs. The visualization is CSS-only, no additional JS necessary.
+ *
+ * 2019-2022 by BitPoet
+ *
+ * Released under Mozilla Public License MPL-2.0
+ *
+ */
+
 class InputfieldSlideToggle extends InputfieldCheckbox {
 
 	public static function getModuleInfo() {
 		return [
 			"title"		=>	"Sliding Toggle",
 			"summary"	=>	"Smartphone style sliding toggle as replacement for plain checkboxes",
-			"version"	=>	"0.0.4",
+			"version"	=>	"0.0.5",
 			"requires"	=>	"InputfieldCheckbox",
 			"installs"	=>	"FieldtypeSlideToggle"
 		];
@@ -29,8 +41,8 @@ class InputfieldSlideToggle extends InputfieldCheckbox {
 		$f->label = $this->_("Off State Color");
 		$f->description = $this->_("Color to use when checkbox is unchecked. Defaults to grey.");
 		$f->addOptions([
-			""			=>	_("Grey"),
-			"red"		=>	_("Red")
+			""			=>	$this->_("Grey"),
+			"red"		=>	$this->_("Red")
 		]);
 		$f->attr('value', $this->getSetting("tsOffColor"));
 		$f->columnWidth = 50;
@@ -41,12 +53,12 @@ class InputfieldSlideToggle extends InputfieldCheckbox {
 		$f->label = $this->_("On State Color");
 		$f->description = $this->_("Color to use when checkbox is checked. Defaults to blue.");
 		$f->addOptions([
-			""			=>	_("Blue"),
-			"black"		=>	_("Black"),
-			"grey"		=>	_("Grey"),
-			"green"		=>	_("Green"),
-			"orange"	=>	_("Orange"),
-			"red"		=>	_("Red"),
+			""			=>	$this->_("Blue"),
+			"black"		=>	$this->_("Black"),
+			"grey"		=>	$this->_("Grey"),
+			"green"		=>	$this->_("Green"),
+			"orange"	=>	$this->_("Orange"),
+			"red"		=>	$this->_("Red"),
 		]);
 		$f->attr('value', $this->getSetting("tsOnColor"));
 		$f->columnWidth = 50;
@@ -57,10 +69,10 @@ class InputfieldSlideToggle extends InputfieldCheckbox {
 		$f->label = $this->_("Size of Toggle");
 		$f->description = $this->_("Select the size in which to render the toggle, defaults to medium");
 		$f->addOptions([
-			"tiny"		=>	_("Small"),
-			""			=>	_("Medium"),
-			"big"		=>	_("Big"),
-			"giant"		=>	_("Extra Big")
+			"tiny"		=>	$this->_("Small"),
+			""			=>	$this->_("Medium"),
+			"big"		=>	$this->_("Big"),
+			"giant"		=>	$this->_("Extra Big")
 		]);
 		$f->attr('value', $this->getSetting('tsSize'));
 		$inputfields->append($f);

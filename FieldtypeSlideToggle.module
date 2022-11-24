@@ -1,12 +1,24 @@
 <?php namespace ProcessWire;
 
+/**
+ * Sliding Toggle Fieldtype
+ *
+ * Fieldtype and Inputfield that implements smartphone-style toggles as replacement
+ * for checkbox inputs. The visualization is CSS-only, no additional JS necessary.
+ *
+ * 2019-2022 by BitPoet
+ *
+ * Released under Mozilla Public License MPL-2.0
+ *
+ */
+
 class FieldtypeSlideToggle extends FieldtypeCheckbox {
 
 	public static function getModuleInfo() {
 		return [
-			"title"		=>	"Sliding Toggle Fieldtype",
+			"title"		=>	"Sliding Toggle",
 			"summary"	=>	"Smartphone style sliding toggle as replacement for plain checkboxes",
-			"version"	=>	"0.0.2",
+			"version"	=>	"0.0.5",
 		];
 	}
 

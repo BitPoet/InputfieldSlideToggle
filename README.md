@@ -7,7 +7,7 @@ Fieldtype and Inputfield that implements smartphone-style toggles as replacement
 
 ## Status
 
-Alpha, use with caution
+Beta, use with care
 
 ## Features / Field Settings
 
